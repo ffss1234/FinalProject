@@ -1,0 +1,96 @@
+body {
+	background-image: url('img/bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: white !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+	opacity: 98% !important; 
+	border-radius: 25px !important;
+}
+
+#homepage:hover{
+	background-color: orange !important;
+}
+
+#Qtd{
+	width:45px !important;
+	display: inline-block !important;
+}
+
+#login{
+	width:400px !important;
+}
+
+#admin{
+	width:60% !important;
+}
+
+.nav a:hover{ 
+	color:orange;
+	font-weight: bold;
+}
+
+.nav a:visited{ 
+	color:orange;
+	font-weight: bold;
+	background-color: white;
+}
+
+.nav a:link{ 
+	color:orange;
+	font-weight: bold;
+}
+
+.nav a:active{ 
+	color:#orange;
+	font-weight: bold;
+}
+
+a{
+	text-decoration:none !important;
+	font-weight:bold;
+	color:orange !important;
+}
+
+.btn-outline-warning{
+	border: none !important;
+	font-weight: bold;
+	font-size: 18px !important;
+}
+
+.btn-outline-warning:hover{
+	border: none !important;
+	color:black !important;
+	font-weight: bold !important;
+}
+
+.btn-outline-danger{
+	border: none !important;
+	font-weight: bold;
+	font-size: 18px !important;
+	color:#d9534f !important;
+}
+
+.btn-outline-danger:hover{
+	border: none !important;
+	color:black !important;
+	font-weight: bold !important;
+}
+
+table{
+	color:white !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   color: white;
+ }
+ 
