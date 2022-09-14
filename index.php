@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 include('db.php');
 
@@ -71,7 +71,7 @@ $catquery = mysqli_query($database, $categories);
 
 
 <!-- BANNER -->
-<script type="text/javascript" src="Banner.js"></script>
+<script type="text/javascript" src="banner.js"></script>
 <div class="container-fluid mb-2">
 	<div class="row">
 		<div class="col-md-12">
@@ -298,7 +298,13 @@ if(!empty($_SESSION['email'])){ ?>
 for($page=1;$page<=$pagenumber;$page++){
 	echo '<a href="index.php?page=' .$page.'">'.$page.' </a> ';
 }
+if(empty($_SESSION['email'])){
 ?>
+<script type="text/javascript">
+   alert('Hi, to try check this website from an admin or customer perspective, use the following to login:\nUser - Pass\nadmin@admin.pt - 123\nguest@guest.pt - 123');
+</script><?php
+} ?>
+
 </div>
 </div></div>
 </body>
