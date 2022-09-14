@@ -1,3 +1,6 @@
+<?php
+ob_start(); ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -20,24 +23,28 @@
 </svg></i></a>
 	
 <div class="container">
-	<div class="row d-flex justify-content-center bg-dark border my-5 py-5">
+	<div class="row bg-dark border my-5 py-5">
 		<!-- LOGIN FORM -->
-		<div class="col-md-6 border-end" align="right">
+		<div class="col-md-6 border-end">
 			<form action="register.php" method="post">
+				<center>
 				<p>Email: <br /><input class="form-control" id="login" placeholder="Johndoe@outlook.com" type="text" name="email2" maxlength="50" required /></p>
 				<p>Password: <br /><input class="form-control" id="login" placeholder="• • • • • • •" type="password" name="pass2" maxlength="50" required /></p>
 				<p><button type="submit" class="btn btn-outline-warning" name="log_in">Log In</button></p>
+				</center>
 			</form>
 		</div>
 		
 		<!-- REGISTRATION FORM -->
 		<div class="col-md-6">
 			<form action="register.php" method="post">
+				<center>
 				<p>Nome: <br /><input type="text" id="login" placeholder="João Alberto" class="form-control" maxlength="50" name="username" required /></p>
 				<p>Email: <br /><input type="text" id="login" placeholder="Johndoe@outlook.com" class="form-control"  name="email" maxlength="50" required /></p>
 				<p>Password: <br /><input type="password" id="login" class="form-control" placeholder="• • • • • • •" name="password1" maxlength="50" required /></p>
 				<p>Confirmar Password: <br /><input type="password" id="login" placeholder="• • • • • • •" class="form-control"  name="password2" maxlength="50" required /></p>
 				<p><button type="submit" class="btn btn-outline-warning" name="reg_user">Registar</button></p>
+				</center>
 			</form>
 		</div>
 		
@@ -46,7 +53,8 @@
 
 <?php
 
-include('db.php');
+
+include('db.php'); 
 
 if(count($errors) > 0 ){ ?>
 
@@ -65,6 +73,7 @@ if(count($errors) > 0 ){ ?>
 if (!empty($_SESSION['email'])){
 	header('refresh:3; url=index.php');
 }
+ob_end_flush() 
 ?>
 </body>
 </html>
