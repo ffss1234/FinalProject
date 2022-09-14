@@ -255,10 +255,10 @@
 
 	<!-- EDITAR UTILIZADORES -->
 
-		<div class="col-md-6">
+		<div class="col-md-6 table-responsive">
 		
 			<form method="post" action="">
-			<table class="table" style="text-align:center">
+			<table class="table" style="text-align:center;">
 				<tr>
 					<th>#</th>
 					<th>Admin</th>
